@@ -1,0 +1,150 @@
+<!--
+Create a page layout using tables
+Navigate should have a link to another existing page
+Content should have an image, A paragraph, a header, and a youtube video
+Footer should have a copyright symbol
+-->
+
+<!DOCTYPE html>
+<head>
+  
+  <title>Welcome to Project 2.0</title>
+  <link rel="shortcut icon" href="images/favicons/png_logo.jpg" type="image/jpg">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      width: 90%;
+      height: 90vh;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Left Navigation */
+    .nav {
+      width: 25%;
+      background-color: #e2e8f0;
+      vertical-align: top;
+      padding: 20px;
+    }
+
+    .nav h3 {
+      color: #004aad;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .nav a {
+      display: block;
+      padding: 10px;
+      color: #004aad;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: bold;
+      background-color: #f8fafc;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav a:hover {
+      background-color: #004aad;
+      color: white;
+    }
+
+    /* Right-hand side (content + footer stacked) */
+    .main {
+      width: 75%;
+      vertical-align: top;
+      padding: 0;
+    }
+
+    .content {
+      padding: 25px;
+      line-height: 1.6;
+      min-height: 75vh;
+    }
+
+    .content h2 {
+      color: #004aad;
+    }
+
+    .content img {
+      display: block;
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+
+    .footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <tr>
+      <!-- LEFT: Navigation -->
+      <td class="nav">
+        <h3>Navigation</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.google.com" target="_blank">Google</a>
+      </td>
+
+      <!-- RIGHT: Main content and footer stacked -->
+      <td class="main">
+        <div class="content">
+          <h2>Welcome to Project 2.0</h2>
+          <p>
+            This is the main content area of the page. It includes an image, a paragraph, and an embedded YouTube video.
+            The layout uses a two-cell table — navigation on the left, and all main content (plus footer) on the right.
+          </p>
+          <hr>
+
+          <img src="project_1_image1.jpg" width="60%" alt="Project Image">
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <h3>Embedded Video</h3>
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/aW1uEUGJ124?si=4EFMBm-rF-W9X1FA"
+            title="YouTube video player" frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="footer">
+          &copy; 2025 My Website | All Rights Reserved
+        </div>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
